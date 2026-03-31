@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond&display=swap" rel="stylesheet">
+
+<style>
+body {
+  body {
+  background: linear-gradient(135deg, #f3e6ff, #d9b3ff);
+  color: #2e004d;
+ font-family: 'EB Garamond', serif;
+}
+
+h1, h2 {
+  font-family: 'Cinzel', serif;
+}
+
+
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+.glow {
+  text-shadow: 0 0 10px #b366ff, 0 0 20px #825ba8;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.typing {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  white-space: nowrap;
+  animation: typing 3s steps(30), blink 0.7s infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #a64dff;
+  box-shadow: 0 0 15px #a270d4;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #b366ff;
+}
+
+.btn-purple {
+  background-color: #8463a5;
+  color: white;
+}
+.btn-purple:hover {
+  background-color: #a64dff;
+}
+
+.section {
+  padding: 60px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark" style="background:#38056b;">
+  <div class="container">
+    <span class="navbar-brand glow">My Portfolio</span>
+  </div>
+</nav>
+
+<div class="card text-center p-3 mb-3">
+  <img src="https://via.placeholder.com/150" class="rounded-circle mb-3 float">
+
+  <h1 class="glow">Shairine Grace S. Martin</h1>
+  <h4>Aspiring Game Developer</h4>
+
+  <p class="typing">Leveling up skills to create immersive game worlds...</p>
+
+  
+<button onclick="welcome()" class="btn btn-purple mt-3">
+  Enter Game World
+</button>
+
+</div>
+
+<div class="container section text-center p-3 fade-in">
+  <h2>🧠 About Me</h2>
+  <p>
+    I am a passionate IT student aiming to become a Game Developer.
+  I enjoy creating interactive systems and exploring how technology can bring ideas to life through games and applications.
+  </p>
+</div>
+
+<div class="container section fade-in">
+  <h2>⚙️ Tech Stack</h2>
+
+  <div class="card p-3 mb-3">
+    <h7>HTML</h7>
+    <h7>JavaScript</h7>
+    <h7>C# (Basic)</h7>
+</div>
+    
+ 
+
+
+
+<div class="container section fade-in">
+  <h2>🎮My Projects</h2>
+
+  <div class="card p-3 mb-3">
+    <h5>💻ClawedbyLight: An Appointment Booking System</h5>
+    <p>Proposes improving efficiency by integrating academic schedules into a booking system to better balance school responsibilities and client appointments.</p>
+  </div>
+
+  <div class="card p-3 mb-3">
+    <h5>🧮 Grade Calculator</h5>
+    <p>Calculates and displays student grades.</p>
+  </div>
+
+</div>
+
+<div class="container section fade-in">
+  <h2>📚 Seminar</h2>
+  <div class="card p-3 mb-3">
+    <h5>SYNTAX ENDGAME</h5>
+    <h7> The 2nd IT Congress: Gaming Towards Excellence.</h7>
+  </div>
+</div>
+
+<div class="container section fade-in">
+  <h2>👥Organization</h2>
+  <div class="card p-3 mb-3">
+    <h5>SYNTAX Organization</h5>
+    <p>(Society of Youth for the Next Technological Advancement and Excellence)</p>
+  </div>
+</div>
+
+<div class="container section fade-in">
+  <h2>📡 Contact Me</h2>
+    <div class="card p-3 mb-3">
+    <h7>Email: martinshairine@gmail.com</h7>
+   <h7>LinkedIn: https://www.linkedin.com/in/shairine-grace-martin-4a57383ba</h7>
+  </div>  
+</div>
+
+<footer class="text-center p-3" >
+  <p>© 2026 Shairine Martin</p>
+</footer>
+
+<script>
+
+
+function startGame() {
+  alert("🎮 Welcome Player! Explore my portfolio!");
+}
+
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if(position < screenHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>
