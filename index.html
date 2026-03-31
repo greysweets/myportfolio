@@ -166,30 +166,13 @@ h1, h2 {
 </footer>
 
 <script>
-
-const glow = document.createElement("div");
-glow.classList.add("cursor-glow");
-document.body.appendChild(glow);
-
-document.addEventListener("mousemove", e => {
-  glow.style.left = e.clientX + "px";
-  glow.style.top = e.clientY + "px";
-});
-
-
-
-<script>
-
-function startGame() {
-  document.getElementById("mainContent").style.display ";
+function welcome() {
+  alert(“Welcome to my portfolio!");
 }
-
 const elements = document.querySelectorAll('.fade-in');
 window.addEventListener('scroll', () => {
   elements.forEach(el => {
-    const position = el.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
-    if(position < screenHeight - 100){
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
       el.classList.add('show');
     }
   });
