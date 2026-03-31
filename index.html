@@ -102,9 +102,12 @@ h1, h2 {
   <p class="typing">Leveling up skills to create immersive game worlds...</p>
 
   
-<button onclick="welcome()" class="btn btn-purple mt-3" Enter Game World</button>
+<button onclick="welcome()"> class="btn btn-purple mt-3" Enter Game World</button>
 
+<div id="mainContent" style="display:none;">
+  <h2>Welcome to my portfolio!</h2>
 </div>
+
 
 <div class="container section text-center p-3 fade-in">
   <h2>🧠 About Me</h2>
@@ -174,8 +177,8 @@ h1, h2 {
 <script>
 
 
-function startGame() {
-  alert("🎮 Welcome Player! Explore my portfolio!");
+function welcome() {
+  document.getElementById("mainContent").style.display = "block";
 }
 
 
