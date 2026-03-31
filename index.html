@@ -97,7 +97,6 @@ h1, h2 {
 <div class="card text-center p-3 mb-3">
   <img src="https://via.placeholder.com/150" class="rounded-circle mb-3 float">
   
-  <div id="mainContent" class="fade-in" style="display: none;">
   <h1 class="glow">Shairine Grace S. Martin</h1>
   <h4>Aspiring Game Developer</h4>
 
@@ -179,15 +178,9 @@ h1, h2 {
 
 
 function startGame() {
-  document.querySelector("button").style.display = "none";
-
-  const content = document.getElementById("mainContent");
-  content.style.display = "block";
-
-  setTimeout(() => {
-    content.classList.add("show");
-  }, 100);
+  alert("🎮 Welcome Player! Explore my portfolio!");
 }
+
 
 const elements = document.querySelectorAll('.fade-in');
 
