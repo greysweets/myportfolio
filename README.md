@@ -164,8 +164,8 @@ h1, h2 {
 <div class="container section fade-in">
   <h2>📡 Contact Me</h2>
     <div class="card p-3 mb-3">
-    <h7>Email: martinshairine@gmail.com</h7>
-   <h7>LinkedIn: https://www.linkedin.com/in/shairine-grace-martin-4a57383ba</h7>
+    <p>Email: <a href="mailto:martinshairine@gmail.com">your@gmail.com</a></p>
+   <p>LinkedIn: <a href="[https://www.linkedin.com/in/your-profile-id" target="_blank](https://www.linkedin.com/in/shairine-grace-martin-4a57383ba)">LinkedIn Profile</a></p
   </div>  
 </div>
 
@@ -193,7 +193,5 @@ window.addEventListener('scroll', () => {
   });
 });
 </script>
-
-
 </body>
 </html>
